@@ -1,33 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-import myWonderfulImage from "./CoolBot-and-the-air-conditioner-installed-inside-the-cold-storage-chamber.png"
-function App() {
-  
+import react from "react";
+import Address from "./comp/Address";
+import FullName from "./comp/FullName";
+import ProfilePhoto from "./comp/ProfilePhoto";
+
+const App = () => {
   return (
+    
     <div className="App">
-
-         <div style={{border:'solid 1px black', maxWidth:'100vw'}} >
-      <h1 className="title red"> Your name goes here </h1>
-    <br />
-     <img src={myWonderfulImage} alt ='myImage' />
-    <br />
-      <img src="betelgeuse.jpg" alt="" srcset="" />
+        <ProfilePhoto/>
+        <FullName/>
+        <Address/>
     </div>
-    
-    <video style={{width:'320',height:'240'}} controls   >
-      <source src="" />
-    </video>
-
-
-
-      
-  
-  
-   
-    
-    </div>
- 
   );
-}
-
-export default App;
+ };
+ export default App;
